@@ -14,6 +14,7 @@ import Prefixes from './src/screen/prefixes';
 import Verbs from './src/screen/verbs';
 import A2Verbs from './src/screen/a2_verbs';
 import RunOut from './src/screen/run-out';
+import Featro from './src/screen/featro';
 
 const Drawer = createDrawerNavigator();
 
@@ -46,6 +47,12 @@ const App = () => {
           component={RunOut}
           options={{title: 'Run out'}}
           initialParams={{source: 'run-out'}}
+        />
+        <Drawer.Screen
+          name="Featro"
+          component={Featro}
+          options={{title: 'Featro'}}
+          initialParams={{source: 'featro'}}
         />
       </Drawer.Navigator>
     </NavigationContainer>
